@@ -9,6 +9,7 @@ jest.mock('../a', () => {
 })
 describe('a module', function () {
 	it('should be mocked', function () {
+		expect(new a().constructorran).toBeUndefined()
 		expect(new a().foo()).toEqual('mocked foo function')
 		expect(new a().bar()).toEqual(undefined)
 	})
