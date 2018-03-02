@@ -1,3 +1,3 @@
 module.exports = {
-	automock: false
+	automock: true
 }
